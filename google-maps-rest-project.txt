@@ -1,25 +1,36 @@
 Started by user anonymous
-Building in workspace C:\Users\Heba\.jenkins\workspace\Rest ? GoogleMaps
- > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
-Fetching changes from the remote Git repository
- > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/Heba/soupui.git # timeout=10
-Fetching upstream changes from https://github.com/Heba/soupui.git
- > C:\Program Files\Git\bin\git.exe --version # timeout=10
+Building in workspace /Users/heba/.jenkins/jobs/Rest-googlemaps/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/heba93/vguppgiften
+ > /usr/bin/git init /Users/heba/.jenkins/jobs/Rest-googlemaps/workspace # timeout=10
+Fetching upstream changes from https://github.com/heba93/vguppgiften
+ > /usr/bin/git --version # timeout=10
 using .gitcredentials to set credentials
- > C:\Program Files\Git\bin\git.exe config --local credential.username Heba@gmail.com # timeout=10
- > C:\Program Files\Git\bin\git.exe config --local credential.helper store --file=\"C:\Users\Heba\AppData\Local\Temp\git3290249967880693804.credentials\" # timeout=10
- > C:\Program Files\Git\bin\git.exe -c core.askpass=true fetch --tags --progress https://github.com/Heba/soupui.git +refs/heads/*:refs/remotes/origin/*
- > C:\Program Files\Git\bin\git.exe config --local --remove-section credential # timeout=10
- > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
- > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
-Checking out Revision f1c03a2695a500eff349c653d241f94b8c740b5f (refs/remotes/origin/master)
- > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
- > C:\Program Files\Git\bin\git.exe checkout -f f1c03a2695a500eff349c653d241f94b8c740b5f
- > C:\Program Files\Git\bin\git.exe rev-list a5dac6b8548dd4b49acb0dc4335fbaa6a8cfb8c1 # timeout=10
+ > /usr/bin/git config --local credential.username heba93 # timeout=10
+ > /usr/bin/git config --local credential.helper store --file=/var/folders/zf/zzf_jrxn58bcv89qgdt9j54r0000gn/T/git5251780714804124365.credentials # timeout=10
+ > /usr/bin/git -c core.askpass=true fetch --tags --progress https://github.com/heba93/vguppgiften +refs/heads/*:refs/remotes/origin/*
+ > /usr/bin/git config --local --remove-section credential # timeout=10
+ > /usr/bin/git config remote.origin.url https://github.com/heba93/vguppgiften # timeout=10
+ > /usr/bin/git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url https://github.com/heba93/vguppgiften # timeout=10
+Fetching upstream changes from https://github.com/heba93/vguppgiften
+using .gitcredentials to set credentials
+ > /usr/bin/git config --local credential.username heba93 # timeout=10
+ > /usr/bin/git config --local credential.helper store --file=/var/folders/zf/zzf_jrxn58bcv89qgdt9j54r0000gn/T/git8245082237313887167.credentials # timeout=10
+ > /usr/bin/git -c core.askpass=true fetch --tags --progress https://github.com/heba93/vguppgiften +refs/heads/*:refs/remotes/origin/*
+ > /usr/bin/git config --local --remove-section credential # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0678c502e764b5e882fc578eaf1f34fb6d4ecfd2 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 0678c502e764b5e882fc578eaf1f34fb6d4ecfd2
+First time build. Skipping changelog.
 Parsing POMs
-[Rest ? GoogleMaps] $ "C:\Program Files\Java\jdk1.8.0_65/bin/java" -cp C:\Users\Heba\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.5.jar;C:\Users\Heba\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v\boot\plexus-classworlds-2.5.2.jar;C:\Users\Heba\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v/conf/logging jenkins.maven3.agent.Maven31Main C:\Users\Heba\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v C:\Users\Heba\.jenkins\war\WEB-INF\lib\remoting-2.57.jar C:\Users\Heba\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar C:\Users\Heba\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar 60397
-<===[JENKINS REMOTING CAPACITY]===>???channel started
-Executing Maven:  -B -f C:\Users\Heba\.jenkins\workspace\Rest ? GoogleMaps\pom.xml com.smartbear.soapui:soapui-maven-plugin:test -DprojectFile=google-maps-rest-project.xml
+Discovered a new module com.scania.cbm.test:soapui-project soapUI project
+Modules changed, recalculating dependency graph
+[workspace] $ /Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/bin/java -cp /Users/heba/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-agent-1.5.jar:/Users/heba/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/boot/plexus-classworlds-2.5.2.jar:/Users/heba/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/conf/logging jenkins.maven3.agent.Maven31Main /Users/heba/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven /Users/heba/.jenkins/war/WEB-INF/lib/remoting-2.56.jar /Users/heba/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-interceptor-1.5.jar /Users/heba/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.5.jar 52925
+<===[JENKINS REMOTING CAPACITY]===>���channel started
+Executing Maven:  -B -f /Users/heba/.jenkins/jobs/Rest-googlemaps/workspace/pom.xml com.smartbear.soapui:soapui-maven-plugin:test -DprojectFile=google-maps-rest-project.xml
 [INFO] Scanning for projects...
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
@@ -28,61 +39,88 @@ Executing Maven:  -B -f C:\Users\Heba\.jenkins\workspace\Rest ? GoogleMaps\pom.x
 [INFO] 
 [INFO] --- soapui-maven-plugin:5.0.0:test (default-cli) @ soapui-project ---
 SoapUI 5.0.0 Maven2 TestCase Runner
-12:41:28,902 WARN  [SoapUI] Missing folder [C:\Users\Heba\.jenkins\workspace\Rest ? GoogleMaps\ext] for external libraries
-12:41:29,056 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Heba\soapui-settings.xml]
-12:41:31,998 INFO  [WsdlProject] Loaded project from [file:/C:/Users/Heba/.jenkins/workspace/Rest%20?%20GoogleMaps/google-maps-rest-project.xml]
-12:41:32,437 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Google MapsVG]
-12:41:32,438 INFO  [SoapUITestCaseRunner] Running Project [Google MapsVG], runType = SEQUENTIAL
-12:41:32,447 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Geocoding API _TestCase]
-12:41:32,453 INFO  [SoapUITestCaseRunner] running step [GET - Sample Request]
-12:41:32,553 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
-12:41:32,553 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /maps/api/geocode/json?address=1600%20Amphitheatre%20Parkway%2C%20Mountain%20View%2C%20CA&sensor=false HTTP/1.1
-12:41:32,583 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
-12:41:32,587 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
-12:41:32,726 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
-12:41:32,726 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"Sweden"] has status VALID
-12:41:32,726 INFO  [SoapUITestCaseRunner] running step [GET - Region Biasing Sample]
-12:41:32,728 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
-12:41:32,730 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
-12:41:32,730 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /maps/api/geocode/json?address=Toledo&sensor=false&region=es HTTP/1.1
-12:41:32,753 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
-12:41:32,754 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
-12:41:32,765 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
-12:41:32,765 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
-12:41:32,765 INFO  [SoapUITestCaseRunner] running step [Address]
-12:41:32,802 INFO  [SoapUITestCaseRunner] running step [Geocoding API]
-12:41:33,170 INFO  [log] 40.714224
-12:41:33,178 INFO  [log] -73.961452
-12:41:33,178 INFO  [SoapUITestCaseRunner] running step [GET - Reverse Lookup Sample]
-12:41:33,180 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
-12:41:33,181 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
-12:41:33,181 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /maps/api/geocode/json?sensor=false&latlng=40.714224%2C-73.961452 HTTP/1.1
-12:41:33,218 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
-12:41:33,218 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
-12:41:33,265 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
-12:41:33,265 INFO  [SoapUITestCaseRunner] Assertion [Not ContainsStockholm] has status VALID
-12:41:33,265 INFO  [SoapUITestCaseRunner] running step [FetchResponse_Reverse]
-12:41:33,366 INFO  [log] {results=[{formatted_address=277 Bedford Ave, Brooklyn, NY 11211, USA, types=[street_address], geometry={viewport={southwest={lng=-73.96263788029151, lat=40.7128830197085}, northeast={lng=-73.9599399197085, lat=40.7155809802915}}, location={lng=-73.9612889, lat=40.714232}, location_type=ROOFTOP}, address_components=[{types=[street_number], short_name=277, long_name=277}, {types=[route], short_name=Bedford Ave, long_name=Bedford Avenue}, {types=[neighborhood, political], short_name=Williamsburg, long_name=Williamsburg}, {types=[sublocality_level_1, sublocality, political], short_name=Brooklyn, long_name=Brooklyn}, {types=[administrative_area_level_2, political], short_name=Kings County, long_name=Kings County}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}, {types=[postal_code], short_name=11211, long_name=11211}], place_id=ChIJd8BlQ2BZwokRAFUEcm_qrcA}, {formatted_address=Grand St/Bedford Av, Brooklyn, NY 11211, USA, types=[bus_station, transit_station, point_of_interest, establishment], geometry={viewport={southwest={lng=-73.96249998029151, lat=40.7129720197085}, northeast={lng=-73.95980201970849, lat=40.71566998029149}}, location={lng=-73.961151, lat=40.714321}, location_type=APPROXIMATE}, address_components=[{types=[point_of_interest, establishment], short_name=Grand St/Bedford Av, long_name=Grand St/Bedford Av}, {types=[neighborhood, political], short_name=Williamsburg, long_name=Williamsburg}, {types=[sublocality_level_1, sublocality, political], short_name=Brooklyn, long_name=Brooklyn}, {types=[administrative_area_level_2, political], short_name=Kings County, long_name=Kings County}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}, {types=[postal_code], short_name=11211, long_name=11211}], place_id=ChIJi27VXGBZwokRM8ErPyB91yk}, {formatted_address=Williamsburg, Brooklyn, NY, USA, types=[neighborhood, political], geometry={viewport={southwest={lng=-73.96984499999999, lat=40.6979329}, northeast={lng=-73.936498, lat=40.7251773}}, bounds={southwest={lng=-73.96984499999999, lat=40.6979329}, northeast={lng=-73.936498, lat=40.7251773}}, location={lng=-73.9570696, lat=40.7081156}, location_type=APPROXIMATE}, address_components=[{types=[neighborhood, political], short_name=Williamsburg, long_name=Williamsburg}, {types=[sublocality_level_1, sublocality, political], short_name=Brooklyn, long_name=Brooklyn}, {types=[locality, political], short_name=New York, long_name=New York}, {types=[administrative_area_level_2, political], short_name=Kings County, long_name=Kings County}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJQSrBBv1bwokRbNfFHCnyeYI}, {formatted_address=Brooklyn, NY, USA, types=[sublocality_level_1, sublocality, political], geometry={viewport={southwest={lng=-74.05663, lat=40.551042}, northeast={lng=-73.83336509999999, lat=40.739446}}, bounds={southwest={lng=-74.05663, lat=40.551042}, northeast={lng=-73.83336509999999, lat=40.739446}}, location={lng=-73.94415789999999, lat=40.6781784}, location_type=APPROXIMATE}, address_components=[{types=[sublocality_level_1, sublocality, political], short_name=Brooklyn, long_name=Brooklyn}, {types=[locality, political], short_name=New York, long_name=New York}, {types=[administrative_area_level_2, political], short_name=Kings County, long_name=Kings County}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJCSF8lBZEwokRhngABHRcdoI}, {formatted_address=New York, NY, USA, types=[locality, political], geometry={viewport={southwest={lng=-74.25573489999999, lat=40.4960439}, northeast={lng=-73.70027209999999, lat=40.91525559999999}}, bounds={southwest={lng=-74.25573489999999, lat=40.4960439}, northeast={lng=-73.70027209999999, lat=40.91525559999999}}, location={lng=-74.0059413, lat=40.7127837}, location_type=APPROXIMATE}, address_components=[{types=[locality, political], short_name=New York, long_name=New York}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJOwg_06VPwokRYv534QaPC8g}, {formatted_address=Brooklyn, NY 11211, USA, types=[postal_code], geometry={viewport={southwest={lng=-73.9644697, lat=40.7008331}, northeast={lng=-73.9207299, lat=40.7280089}}, bounds={southwest={lng=-73.9644697, lat=40.7008331}, northeast={lng=-73.9207299, lat=40.7280089}}, location={lng=-73.9565551, lat=40.7093358}, location_type=APPROXIMATE}, address_components=[{types=[postal_code], short_name=11211, long_name=11211}, {types=[sublocality_level_1, sublocality, political], short_name=Brooklyn, long_name=Brooklyn}, {types=[locality, political], short_name=New York, long_name=New York}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJvbEjlVdZwokR4KapM3WCFRw}, {formatted_address=Kings County, NY, USA, types=[administrative_area_level_2, political], geometry={viewport={southwest={lng=-74.04195919999999, lat=40.5702197}, northeast={lng=-73.83336509999999, lat=40.7391407}}, bounds={southwest={lng=-74.04195919999999, lat=40.5702197}, northeast={lng=-73.83336509999999, lat=40.7391407}}, location={lng=-73.95949399999999, lat=40.6528762}, location_type=APPROXIMATE}, address_components=[{types=[administrative_area_level_2, political], short_name=Kings County, long_name=Kings County}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJOwE7_GTtwokRs75rhW4_I6M}, {formatted_address=New York-Newark-Jersey City, NY-NJ-PA Metropolitan Statistical Area, USA, types=[political], geometry={viewport={southwest={lng=-75.3587649, lat=39.475198}, northeast={lng=-71.777491, lat=42.0809059}}, bounds={southwest={lng=-75.3587649, lat=39.475198}, northeast={lng=-71.777491, lat=42.0809059}}, location={lng=-74.0300122, lat=40.9590293}, location_type=APPROXIMATE}, address_components=[{types=[political], short_name=New York-Newark-Jersey City, NY-NJ-PA Metropolitan Statistical Area, long_name=New York-Newark-Jersey City, NY-NJ-PA Metropolitan Statistical Area}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJ-5Z24NaGwokRiMh4Rj8FNMo}, {formatted_address=New York, USA, types=[administrative_area_level_1, political], geometry={viewport={southwest={lng=-79.76214379999999, lat=40.496091}, northeast={lng=-71.85620639999999, lat=45.015859}}, bounds={southwest={lng=-79.76214379999999, lat=40.496091}, northeast={lng=-71.85620639999999, lat=45.015865}}, location={lng=-74.21793260000001, lat=43.2994285}, location_type=APPROXIMATE}, address_components=[{types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJqaUj8fBLzEwRZ5UY3sHGz90}, {formatted_address=United States, types=[country, political], geometry={viewport={southwest={lng=-124.39, lat=25.82}, northeast={lng=-66.94, lat=49.38}}, bounds={southwest={lng=172.4458955, lat=18.910677}, northeast={lng=-66.9502861, lat=71.3867745}}, location={lng=-95.712891, lat=37.09024}, location_type=APPROXIMATE}, address_components=[{types=[country, political], short_name=US, long_name=United States}], place_id=ChIJCzYy5IS16lQRQrfeQ5K5Oxw}], status=OK}
-12:41:33,407 INFO  [log] 40.714232
-12:41:33,408 INFO  [log] -73.9612889
-12:41:33,409 INFO  [SoapUITestCaseRunner] running step [GET - Viewport Biasing Sample]
-12:41:33,411 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
-12:41:33,412 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
-12:41:33,412 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /maps/api/geocode/json?address=Winnetka&sensor=false&bounds=40.714232%2C-73.9612889%7C34.172684%2C-118.604794%7C34.236144%2C-118.500938 HTTP/1.1
-12:41:33,436 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
-12:41:33,437 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
-12:41:33,448 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
-12:41:33,448 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
-12:41:33,448 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Geocoding API _TestCase], time taken: 767ms, status: FINISHED
-12:41:33,449 INFO  [SoapUITestCaseRunner] Project [Google MapsVG] finished with status [FINISHED] in 1008ms
+14:58:19,052 WARN  [SoapUI] Missing folder [/Users/heba/.jenkins/jobs/Rest-googlemaps/workspace/ext] for external libraries
+14:58:19,210 INFO  [DefaultSoapUICore] initialized soapui-settings from [/Users/heba/soapui-settings.xml]
+14:58:19,613 INFO  [WsdlProject] Loaded project from [file:/Users/heba/.jenkins/jobs/Rest-googlemaps/workspace/google-maps-rest-project.xml]
+14:58:20,004 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Google MapsVG]
+14:58:20,005 INFO  [SoapUITestCaseRunner] Running Project [Google MapsVG], runType = SEQUENTIAL
+14:58:20,013 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Geocoding API _TestCase]
+14:58:20,016 INFO  [SoapUITestCaseRunner] running step [GET - Sample Request]
+14:58:20,109 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+14:58:20,109 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /maps/api/geocode/json?address=1600%20Amphitheatre%20Parkway%2C%20Mountain%20View%2C%20CA&sensor=false HTTP/1.1
+14:58:20,145 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+14:58:20,149 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+14:58:20,248 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+14:58:20,248 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"Sweden"] has status VALID
+14:58:20,249 INFO  [SoapUITestCaseRunner] running step [GET - Region Biasing Sample]
+14:58:20,251 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+14:58:20,253 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+14:58:20,253 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /maps/api/geocode/json?address=Toledo&sensor=false&region=es HTTP/1.1
+14:58:20,307 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+14:58:20,307 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+14:58:20,319 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+14:58:20,319 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
+14:58:20,319 INFO  [SoapUITestCaseRunner] running step [Address]
+14:58:20,346 INFO  [SoapUITestCaseRunner] running step [Geocoding API]
+14:58:20,631 INFO  [log] 40.714224
+14:58:20,638 INFO  [log] -73.961452
+14:58:20,638 INFO  [SoapUITestCaseRunner] running step [GET - Reverse Lookup Sample]
+14:58:20,640 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+14:58:20,641 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+14:58:20,641 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /maps/api/geocode/json?sensor=false&latlng=40.714224%2C-73.961452 HTTP/1.1
+14:58:20,703 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+14:58:20,703 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+14:58:20,749 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+14:58:20,749 INFO  [SoapUITestCaseRunner] Assertion [Not ContainsStockholm] has status VALID
+14:58:20,749 INFO  [SoapUITestCaseRunner] running step [FetchResponse_Reverse]
+14:58:20,840 INFO  [log] {results=[{formatted_address=277 Bedford Ave, Brooklyn, NY 11211, USA, types=[street_address], geometry={viewport={southwest={lng=-73.96263788029151, lat=40.7128830197085}, northeast={lng=-73.9599399197085, lat=40.7155809802915}}, location={lng=-73.9612889, lat=40.714232}, location_type=ROOFTOP}, address_components=[{types=[street_number], short_name=277, long_name=277}, {types=[route], short_name=Bedford Ave, long_name=Bedford Avenue}, {types=[neighborhood, political], short_name=Williamsburg, long_name=Williamsburg}, {types=[sublocality_level_1, sublocality, political], short_name=Brooklyn, long_name=Brooklyn}, {types=[administrative_area_level_2, political], short_name=Kings County, long_name=Kings County}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}, {types=[postal_code], short_name=11211, long_name=11211}], place_id=ChIJd8BlQ2BZwokRAFUEcm_qrcA}, {formatted_address=Grand St/Bedford Av, Brooklyn, NY 11211, USA, types=[bus_station, transit_station, point_of_interest, establishment], geometry={viewport={southwest={lng=-73.96249998029151, lat=40.7129720197085}, northeast={lng=-73.95980201970849, lat=40.71566998029149}}, location={lng=-73.961151, lat=40.714321}, location_type=APPROXIMATE}, address_components=[{types=[point_of_interest, establishment], short_name=Grand St/Bedford Av, long_name=Grand St/Bedford Av}, {types=[neighborhood, political], short_name=Williamsburg, long_name=Williamsburg}, {types=[sublocality_level_1, sublocality, political], short_name=Brooklyn, long_name=Brooklyn}, {types=[administrative_area_level_2, political], short_name=Kings County, long_name=Kings County}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}, {types=[postal_code], short_name=11211, long_name=11211}], place_id=ChIJi27VXGBZwokRM8ErPyB91yk}, {formatted_address=Williamsburg, Brooklyn, NY, USA, types=[neighborhood, political], geometry={viewport={southwest={lng=-73.96984499999999, lat=40.6979329}, northeast={lng=-73.936498, lat=40.7251773}}, bounds={southwest={lng=-73.96984499999999, lat=40.6979329}, northeast={lng=-73.936498, lat=40.7251773}}, location={lng=-73.9570696, lat=40.7081156}, location_type=APPROXIMATE}, address_components=[{types=[neighborhood, political], short_name=Williamsburg, long_name=Williamsburg}, {types=[sublocality_level_1, sublocality, political], short_name=Brooklyn, long_name=Brooklyn}, {types=[locality, political], short_name=New York, long_name=New York}, {types=[administrative_area_level_2, political], short_name=Kings County, long_name=Kings County}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJQSrBBv1bwokRbNfFHCnyeYI}, {formatted_address=Brooklyn, NY, USA, types=[sublocality_level_1, sublocality, political], geometry={viewport={southwest={lng=-74.05663, lat=40.551042}, northeast={lng=-73.83336509999999, lat=40.739446}}, bounds={southwest={lng=-74.05663, lat=40.551042}, northeast={lng=-73.83336509999999, lat=40.739446}}, location={lng=-73.94415789999999, lat=40.6781784}, location_type=APPROXIMATE}, address_components=[{types=[sublocality_level_1, sublocality, political], short_name=Brooklyn, long_name=Brooklyn}, {types=[locality, political], short_name=New York, long_name=New York}, {types=[administrative_area_level_2, political], short_name=Kings County, long_name=Kings County}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJCSF8lBZEwokRhngABHRcdoI}, {formatted_address=New York, NY, USA, types=[locality, political], geometry={viewport={southwest={lng=-74.25573489999999, lat=40.4960439}, northeast={lng=-73.70027209999999, lat=40.91525559999999}}, bounds={southwest={lng=-74.25573489999999, lat=40.4960439}, northeast={lng=-73.70027209999999, lat=40.91525559999999}}, location={lng=-74.0059413, lat=40.7127837}, location_type=APPROXIMATE}, address_components=[{types=[locality, political], short_name=New York, long_name=New York}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJOwg_06VPwokRYv534QaPC8g}, {formatted_address=Brooklyn, NY 11211, USA, types=[postal_code], geometry={viewport={southwest={lng=-73.9644697, lat=40.7008331}, northeast={lng=-73.9207299, lat=40.7280089}}, bounds={southwest={lng=-73.9644697, lat=40.7008331}, northeast={lng=-73.9207299, lat=40.7280089}}, location={lng=-73.9565551, lat=40.7093358}, location_type=APPROXIMATE}, address_components=[{types=[postal_code], short_name=11211, long_name=11211}, {types=[sublocality_level_1, sublocality, political], short_name=Brooklyn, long_name=Brooklyn}, {types=[locality, political], short_name=New York, long_name=New York}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJvbEjlVdZwokR4KapM3WCFRw}, {formatted_address=Kings County, NY, USA, types=[administrative_area_level_2, political], geometry={viewport={southwest={lng=-74.04195919999999, lat=40.5702197}, northeast={lng=-73.83336509999999, lat=40.7391407}}, bounds={southwest={lng=-74.04195919999999, lat=40.5702197}, northeast={lng=-73.83336509999999, lat=40.7391407}}, location={lng=-73.95949399999999, lat=40.6528762}, location_type=APPROXIMATE}, address_components=[{types=[administrative_area_level_2, political], short_name=Kings County, long_name=Kings County}, {types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJOwE7_GTtwokRs75rhW4_I6M}, {formatted_address=New York-Newark-Jersey City, NY-NJ-PA Metropolitan Statistical Area, USA, types=[political], geometry={viewport={southwest={lng=-75.3587649, lat=39.475198}, northeast={lng=-71.777491, lat=42.0809059}}, bounds={southwest={lng=-75.3587649, lat=39.475198}, northeast={lng=-71.777491, lat=42.0809059}}, location={lng=-74.0300122, lat=40.9590293}, location_type=APPROXIMATE}, address_components=[{types=[political], short_name=New York-Newark-Jersey City, NY-NJ-PA Metropolitan Statistical Area, long_name=New York-Newark-Jersey City, NY-NJ-PA Metropolitan Statistical Area}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJ-5Z24NaGwokRiMh4Rj8FNMo}, {formatted_address=New York, USA, types=[administrative_area_level_1, political], geometry={viewport={southwest={lng=-79.76214379999999, lat=40.496091}, northeast={lng=-71.85620639999999, lat=45.015859}}, bounds={southwest={lng=-79.76214379999999, lat=40.496091}, northeast={lng=-71.85620639999999, lat=45.015865}}, location={lng=-74.21793260000001, lat=43.2994285}, location_type=APPROXIMATE}, address_components=[{types=[administrative_area_level_1, political], short_name=NY, long_name=New York}, {types=[country, political], short_name=US, long_name=United States}], place_id=ChIJqaUj8fBLzEwRZ5UY3sHGz90}, {formatted_address=United States, types=[country, political], geometry={viewport={southwest={lng=-124.39, lat=25.82}, northeast={lng=-66.94, lat=49.38}}, bounds={southwest={lng=172.4458955, lat=18.910677}, northeast={lng=-66.9502861, lat=71.3867745}}, location={lng=-95.712891, lat=37.09024}, location_type=APPROXIMATE}, address_components=[{types=[country, political], short_name=US, long_name=United States}], place_id=ChIJCzYy5IS16lQRQrfeQ5K5Oxw}], status=OK}
+14:58:20,866 INFO  [log] 40.714232
+14:58:20,867 INFO  [log] -73.9612889
+14:58:20,867 INFO  [SoapUITestCaseRunner] running step [GET - Viewport Biasing Sample]
+14:58:20,868 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+14:58:20,870 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+14:58:20,870 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: GET /maps/api/geocode/json?address=Winnetka&sensor=false&bounds=40.714232%2C-73.9612889%7C34.172684%2C-118.604794%7C34.236144%2C-118.500938 HTTP/1.1
+14:58:20,926 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+14:58:20,926 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+14:58:20,931 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+14:58:20,931 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
+14:58:20,931 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Geocoding API _TestCase], time taken: 707ms, status: FINISHED
+14:58:20,932 INFO  [SoapUITestCaseRunner] Project [Google MapsVG] finished with status [FINISHED] in 924ms
 [JENKINS] Recording test results
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS  
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.871 s
-[INFO] Finished at: 2016-05-23T12:41:33+02:00
-[INFO] Final Memory: 27M/252M
+[INFO] Total time: 2.757 s
+[INFO] Finished at: 2016-05-23T14:58:21+02:00
+[INFO] Final Memory: 27M/334M
 [INFO] ------------------------------------------------------------------------
-[JENKINS] Archiving C:\Users\Heba\.jenkins\workspace\Rest ? GoogleMaps\pom.xml to com.scania.cbm.test/soapui-project/0.0.1/soapui-project-0.0.1.pom
+[JENKINS] Archiving /Users/heba/.jenkins/jobs/Rest-googlemaps/workspace/pom.xml to com.scania.cbm.test/soapui-project/0.0.1/soapui-project-0.0.1.pom
 channel stopped
+[WARNING] Couldn't clean up oid=2 from null
+hudson.remoting.ChannelClosedException: channel is already closed
+	at hudson.remoting.Channel.send(Channel.java:578)
+	at hudson.remoting.RemoteInvocationHandler$PhantomReferenceImpl.cleanup(RemoteInvocationHandler.java:360)
+	at hudson.remoting.RemoteInvocationHandler$PhantomReferenceImpl.access$700(RemoteInvocationHandler.java:319)
+	at hudson.remoting.RemoteInvocationHandler$Unexporter.run(RemoteInvocationHandler.java:420)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.AtmostOneThreadExecutor$Worker.run(AtmostOneThreadExecutor.java:110)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: hudson.remoting.Channel$OrderlyShutdown
+	at hudson.remoting.Channel$CloseCommand.execute(Channel.java:1080)
+	at hudson.remoting.Channel$1.handle(Channel.java:501)
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:60)
+Caused by: Command close created at
+	at hudson.remoting.Command.<init>(Command.java:56)
+	at hudson.remoting.Channel$CloseCommand.<init>(Channel.java:1074)
+	at hudson.remoting.Channel$CloseCommand.<init>(Channel.java:1072)
+	at hudson.remoting.Channel.close(Channel.java:1156)
+	at hudson.remoting.Channel.close(Channel.java:1138)
+	at hudson.maven.ProcessCache$MavenProcess.discard(ProcessCache.java:150)
+	at hudson.maven.MavenModuleSetBuild$MavenModuleSetBuildExecution.doRun(MavenModuleSetBuild.java:848)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:534)
+	at hudson.model.Run.execute(Run.java:1738)
+	at hudson.maven.MavenModuleSetBuild.run(MavenModuleSetBuild.java:529)
+	at hudson.model.ResourceController.execute(ResourceController.java:98)
+	at hudson.model.Executor.run(Executor.java:410)
 Finished: SUCCESS

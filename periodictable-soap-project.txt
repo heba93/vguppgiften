@@ -1,94 +1,733 @@
 Started by user anonymous
-Building in workspace C:\Users\Heba\.jenkins\workspace\Soap ? PeriodicTable
- > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
-Fetching changes from the remote Git repository
- > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/Heba/soupui.git # timeout=10
-Fetching upstream changes from https://github.com/Heba/soupui.git
- > C:\Program Files\Git\bin\git.exe --version # timeout=10
+Building in workspace /Users/heba/.jenkins/jobs/Soap – PeriodicTable/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/heba93/vguppgiften
+ > /usr/bin/git init /Users/heba/.jenkins/jobs/Soap – PeriodicTable/workspace # timeout=10
+Fetching upstream changes from https://github.com/heba93/vguppgiften
+ > /usr/bin/git --version # timeout=10
 using .gitcredentials to set credentials
- > C:\Program Files\Git\bin\git.exe config --local credential.username Heba@gmail.com # timeout=10
- > C:\Program Files\Git\bin\git.exe config --local credential.helper store --file=\"C:\Users\Heba\AppData\Local\Temp\git2758433795342358675.credentials\" # timeout=10
- > C:\Program Files\Git\bin\git.exe -c core.askpass=true fetch --tags --progress https://github.com/Heba/soupui.git +refs/heads/*:refs/remotes/origin/*
- > C:\Program Files\Git\bin\git.exe config --local --remove-section credential # timeout=10
- > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
- > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
-Checking out Revision e1ee93bbfe605900a5a5aa112d15c51503ebb9bf (refs/remotes/origin/master)
- > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
- > C:\Program Files\Git\bin\git.exe checkout -f e1ee93bbfe605900a5a5aa112d15c51503ebb9bf
- > C:\Program Files\Git\bin\git.exe rev-list e01b5d2145d4ea0905f2a9c650df39a714c780b8 # timeout=10
+ > /usr/bin/git config --local credential.username heba93 # timeout=10
+ > /usr/bin/git config --local credential.helper store --file=/var/folders/zf/zzf_jrxn58bcv89qgdt9j54r0000gn/T/git3973885590970978588.credentials # timeout=10
+ > /usr/bin/git -c core.askpass=true fetch --tags --progress https://github.com/heba93/vguppgiften +refs/heads/*:refs/remotes/origin/*
+ > /usr/bin/git config --local --remove-section credential # timeout=10
+ > /usr/bin/git config remote.origin.url https://github.com/heba93/vguppgiften # timeout=10
+ > /usr/bin/git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url https://github.com/heba93/vguppgiften # timeout=10
+Fetching upstream changes from https://github.com/heba93/vguppgiften
+using .gitcredentials to set credentials
+ > /usr/bin/git config --local credential.username heba93 # timeout=10
+ > /usr/bin/git config --local credential.helper store --file=/var/folders/zf/zzf_jrxn58bcv89qgdt9j54r0000gn/T/git141773339436332265.credentials # timeout=10
+ > /usr/bin/git -c core.askpass=true fetch --tags --progress https://github.com/heba93/vguppgiften +refs/heads/*:refs/remotes/origin/*
+ > /usr/bin/git config --local --remove-section credential # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0678c502e764b5e882fc578eaf1f34fb6d4ecfd2 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 0678c502e764b5e882fc578eaf1f34fb6d4ecfd2
+First time build. Skipping changelog.
 Parsing POMs
-[Soap ? PeriodicTable] $ "C:\Program Files\Java\jdk1.8.0_65/bin/java" -cp C:\Users\Heba\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.5.jar;C:\Users\Heba\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v\boot\plexus-classworlds-2.5.2.jar;C:\Users\Heba\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v/conf/logging jenkins.maven3.agent.Maven31Main C:\Users\Heba\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v C:\Users\Heba\.jenkins\war\WEB-INF\lib\remoting-2.57.jar C:\Users\Heba\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar C:\Users\Heba\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar 59573
-<===[JENKINS REMOTING CAPACITY]===>???channel started
-Executing Maven:  -B -f C:\Users\Heba\.jenkins\workspace\Soap ? PeriodicTable\pom.xml com.smartbear.soapui:soapui-maven-plugin:test -DprojectFile=periodictable-soap-project.xml
+Discovered a new module com.scania.cbm.test:soapui-project soapUI project
+Modules changed, recalculating dependency graph
+[workspace] $ /Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/bin/java -cp /Users/heba/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-agent-1.5.jar:/Users/heba/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/boot/plexus-classworlds-2.5.2.jar:/Users/heba/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven/conf/logging jenkins.maven3.agent.Maven31Main /Users/heba/.jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven /Users/heba/.jenkins/war/WEB-INF/lib/remoting-2.56.jar /Users/heba/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven31-interceptor-1.5.jar /Users/heba/.jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.5.jar 52242
+<===[JENKINS REMOTING CAPACITY]===>���channel started
+Executing Maven:  -B -f /Users/heba/.jenkins/jobs/Soap – PeriodicTable/workspace/pom.xml com.smartbear.soapui:soapui-maven-plugin:test -DprojectFile=periodictable-soap-project.xml
 [INFO] Scanning for projects...
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-maven-plugin/5.0.0/soapui-maven-plugin-5.0.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-maven-plugin/5.0.0/soapui-maven-plugin-5.0.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-maven-plugin/5.0.0/soapui-maven-plugin-5.0.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-maven-plugin/5.0.0/soapui-maven-plugin-5.0.0.pom (3 KB at 1.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-project/5.0.0/soapui-project-5.0.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-project/5.0.0/soapui-project-5.0.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-project/5.0.0/soapui-project-5.0.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-project/5.0.0/soapui-project-5.0.0.pom (4 KB at 2.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-maven-plugin/5.0.0/soapui-maven-plugin-5.0.0.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-maven-plugin/5.0.0/soapui-maven-plugin-5.0.0.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-maven-plugin/5.0.0/soapui-maven-plugin-5.0.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui-maven-plugin/5.0.0/soapui-maven-plugin-5.0.0.jar (20 KB at 11.2 KB/sec)
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building soapUI project 0.0.1
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- soapui-maven-plugin:5.0.0:test (default-cli) @ soapui-project ---
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.pom (19 KB at 10.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/junit/junit/4.10/junit-4.10.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.pom (3 KB at 2.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.pom (481 B at 6.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.1/hamcrest-parent-1.1.pom (6 KB at 76.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xmlbeans/xbean/fixed-2.4.0/xbean-fixed-2.4.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/xmlbeans/xbean/fixed-2.4.0/xbean-fixed-2.4.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/xmlbeans/xbean/fixed-2.4.0/xbean-fixed-2.4.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xmlbeans/xbean/fixed-2.4.0/xbean-fixed-2.4.0.pom (158 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xmlbeans/xbean_xpath/2.4.0/xbean_xpath-2.4.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/xmlbeans/xbean_xpath/2.4.0/xbean_xpath-2.4.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/xmlbeans/xbean_xpath/2.4.0/xbean_xpath-2.4.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xmlbeans/xbean_xpath/2.4.0/xbean_xpath-2.4.0.pom (158 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xmlbeans/xmlpublic/2.4.0/xmlpublic-2.4.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/xmlbeans/xmlpublic/2.4.0/xmlpublic-2.4.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/xmlbeans/xmlpublic/2.4.0/xmlpublic-2.4.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xmlbeans/xmlpublic/2.4.0/xmlpublic-2.4.0.pom (156 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/javax/xml/bind/jsr173_api/1.0/jsr173_api-1.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/xml/bind/jsr173_api/1.0/jsr173_api-1.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/xml/bind/jsr173_api/1.0/jsr173_api-1.0.pom (157 B at 2.0 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/google/guava/guava/14.0/guava-14.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0/guava-14.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0/guava-14.0.pom (6 KB at 71.9 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/google/guava/guava-parent/14.0/guava-parent-14.0.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/14.0/guava-parent-14.0.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/14.0/guava-parent-14.0.pom (3 KB at 33.7 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom (13 KB at 158.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/commons/commons-parent/9/commons-parent-9.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/9/commons-parent-9.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/9/commons-parent-9.pom (22 KB at 285.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-lang/commons-lang/2.4/commons-lang-2.4.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.4/commons-lang-2.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.4/commons-lang-2.4.pom (14 KB at 179.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/log4j/log4j/1.2.14/log4j-1.2.14.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.pom (3 KB at 31.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom (18 KB at 239.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom (16 KB at 208.9 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/fifesoft/rsyntaxtextarea/2.5.0/rsyntaxtextarea-2.5.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/com/fifesoft/rsyntaxtextarea/2.5.0/rsyntaxtextarea-2.5.0.pom (3 KB at 2.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/fifesoft/rtext-root-pom/3/rtext-root-pom-3.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/com/fifesoft/rtext-root-pom/3/rtext-root-pom-3.pom (4 KB at 4.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jetty/jetty/6.1.26/jetty-6.1.26.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/jetty/jetty/6.1.26/jetty-6.1.26.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/jetty/jetty/6.1.26/jetty-6.1.26.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jetty/jetty/6.1.26/jetty-6.1.26.pom (151 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jetty/jetty-util/6.1.26/jetty-util-6.1.26.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/jetty/jetty-util/6.1.26/jetty-util-6.1.26.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/jetty/jetty-util/6.1.26/jetty-util-6.1.26.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jetty/jetty-util/6.1.26/jetty-util-6.1.26.pom (156 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom (163 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/ws/security/wss4j/1.6.14/wss4j-1.6.14.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ws/security/wss4j/1.6.14/wss4j-1.6.14.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ws/security/wss4j/1.6.14/wss4j-1.6.14.pom (23 KB at 304.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/santuario/xmlsec/1.5.6/xmlsec-1.5.6.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/santuario/xmlsec/1.5.6/xmlsec-1.5.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/santuario/xmlsec/1.5.6/xmlsec-1.5.6.pom (16 KB at 201.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/opensaml/opensaml/2.5.1-1/opensaml-2.5.1-1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/opensaml/opensaml/2.5.1-1/opensaml-2.5.1-1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/opensaml/opensaml/2.5.1-1/opensaml-2.5.1-1.pom (21 KB at 281.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/opensaml/openws/1.4.2-1/openws-1.4.2-1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/opensaml/openws/1.4.2-1/openws-1.4.2-1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/opensaml/openws/1.4.2-1/openws-1.4.2-1.pom (20 KB at 262.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/opensaml/xmltooling/1.3.2-1/xmltooling-1.3.2-1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/opensaml/xmltooling/1.3.2-1/xmltooling-1.3.2-1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/opensaml/xmltooling/1.3.2-1/xmltooling-1.3.2-1.pom (19 KB at 231.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom (3 KB at 2.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/slf4j/slf4j-parent/1.6.1/slf4j-parent-1.6.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/slf4j/slf4j-parent/1.6.1/slf4j-parent-1.6.1.pom (10 KB at 10.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/joda-time/joda-time/1.6.2/joda-time-1.6.2.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/joda-time/joda-time/1.6.2/joda-time-1.6.2.pom (14 KB at 16.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/santuario/xmlsec/1.4.4/xmlsec-1.4.4.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/santuario/xmlsec/1.4.4/xmlsec-1.4.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/santuario/xmlsec/1.4.4/xmlsec-1.4.4.pom (13 KB at 170.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/net/sourceforge/htmlunit/htmlunit/2.7/htmlunit-2.7.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/htmlunit/htmlunit/2.7/htmlunit-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/htmlunit/htmlunit/2.7/htmlunit-2.7.pom (28 KB at 361.0 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xalan/xalan/2.7.1/xalan-2.7.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xalan/xalan/2.7.1/xalan-2.7.1.pom (2 KB at 1.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xalan/serializer/2.7.1/serializer-2.7.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/xalan/serializer/2.7.1/serializer-2.7.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/xalan/serializer/2.7.1/serializer-2.7.1.pom (2 KB at 14.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.pom (2 KB at 22.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.pom (8 KB at 8.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom (6 KB at 6.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.2/commons-codec-1.2.pom (4 KB at 51.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom (11 KB at 140.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom (25 KB at 329.7 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.7/htmlunit-core-js-2.7.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.7/htmlunit-core-js-2.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.7/htmlunit-core-js-2.7.pom (2 KB at 24.0 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.pom (2 KB at 0.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/net/sourceforge/nekohtml/nekohtml/1.9.14/nekohtml-1.9.14.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.14/nekohtml-1.9.14.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.14/nekohtml-1.9.14.pom (2 KB at 18.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/net/sourceforge/cssparser/cssparser/0.9.5/cssparser-0.9.5.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/cssparser/cssparser/0.9.5/cssparser-0.9.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/cssparser/cssparser/0.9.5/cssparser-0.9.5.pom (4 KB at 45.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/w3c/css/sac/1.3/sac-1.3.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/w3c/css/sac/1.3/sac-1.3.pom (2 KB at 1.0 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-io/commons-io/1.4/commons-io-1.4.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/1.4/commons-io-1.4.pom (13 KB at 178.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/commons/commons-parent/7/commons-parent-7.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/apache/commons/commons-parent/7/commons-parent-7.pom (18 KB at 14.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.pom (6 KB at 43.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcomponents-client/4.1.1/httpcomponents-client-4.1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.1.1/httpcomponents-client-4.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.1.1/httpcomponents-client-4.1.1.pom (12 KB at 153.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/project/4.1.1/project-4.1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/4.1.1/project-4.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/4.1.1/project-4.1.1.pom (17 KB at 227.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.pom (9 KB at 115.0 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcomponents-core/4.1/httpcomponents-core-4.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.1/httpcomponents-core-4.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.1/httpcomponents-core-4.1.pom (9 KB at 117.7 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpmime/4.1.1/httpmime-4.1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.1.1/httpmime-4.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.1.1/httpmime-4.1.1.pom (6 KB at 68.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpclient-cache/4.1.1/httpclient-cache-4.1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient-cache/4.1.1/httpclient-cache-4.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient-cache/4.1.1/httpclient-cache-4.1.1.pom (7 KB at 92.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcore/4.1.1/httpcore-4.1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.1.1/httpcore-4.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.1.1/httpcore-4.1.1.pom (8 KB at 72.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcomponents-core/4.1.1/httpcomponents-core-4.1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.1.1/httpcomponents-core-4.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.1.1/httpcomponents-core-4.1.1.pom (10 KB at 131.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcore-nio/4.1.1/httpcore-nio-4.1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore-nio/4.1.1/httpcore-nio-4.1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore-nio/4.1.1/httpcore-nio-4.1.1.pom (6 KB at 71.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.client/0.31/org.apache.oltu.oauth2.client-0.31.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.client/0.31/org.apache.oltu.oauth2.client-0.31.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.client/0.31/org.apache.oltu.oauth2.client-0.31.pom (3 KB at 39.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.parent/0.31/org.apache.oltu.oauth2.parent-0.31.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.parent/0.31/org.apache.oltu.oauth2.parent-0.31.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.parent/0.31/org.apache.oltu.oauth2.parent-0.31.pom (5 KB at 59.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/oltu/org.apache.oltu.parent/1/org.apache.oltu.parent-1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/oltu/org.apache.oltu.parent/1/org.apache.oltu.parent-1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/oltu/org.apache.oltu.parent/1/org.apache.oltu.parent-1.pom (32 KB at 428.7 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.common/0.31/org.apache.oltu.oauth2.common-0.31.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.common/0.31/org.apache.oltu.oauth2.common-0.31.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.common/0.31/org.apache.oltu.oauth2.common-0.31.pom (3 KB at 38.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/codehaus/jettison/jettison/1.2/jettison-1.2.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.2/jettison-1.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.2/jettison-1.2.pom (4 KB at 42.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-codec/commons-codec/1.8/commons-codec-1.8.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.8/commons-codec-1.8.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.8/commons-codec-1.8.pom (12 KB at 152.7 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/commons/commons-parent/28/commons-parent-28.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/28/commons-parent-28.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/28/commons-parent-28.pom (49 KB at 661.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.httpclient4/0.31/org.apache.oltu.oauth2.httpclient4-0.31.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.httpclient4/0.31/org.apache.oltu.oauth2.httpclient4-0.31.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.httpclient4/0.31/org.apache.oltu.oauth2.httpclient4-0.31.pom (3 KB at 35.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.pom (6 KB at 80.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.5/httpcomponents-client-4.2.5.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.5/httpcomponents-client-4.2.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.2.5/httpcomponents-client-4.2.5.pom (15 KB at 160.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/project/6/project-6.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/6/project-6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/6/project-6.pom (24 KB at 292.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.pom (6 KB at 77.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.4/httpcomponents-core-4.2.4.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.4/httpcomponents-core-4.2.4.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.2.4/httpcomponents-core-4.2.4.pom (12 KB at 155.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom (11 KB at 151.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom (601 B at 0.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/maven/maven/2.0/maven-2.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/apache/maven/maven/2.0/maven-2.0.pom (9 KB at 9.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/javax/activation/activation/1.1/activation-1.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/javax/activation/activation/1.1/activation-1.1.pom (2 KB at 1.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/javax/mail/mail/1.4/mail-1.4.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/javax/mail/mail/1.4/mail-1.4.pom (993 B at 1.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/wsdl4j/wsdl4j/1.6.2-fixed/wsdl4j-1.6.2-fixed.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/wsdl4j/wsdl4j/1.6.2-fixed/wsdl4j-1.6.2-fixed.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/wsdl4j/wsdl4j/1.6.2-fixed/wsdl4j-1.6.2-fixed.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/wsdl4j/wsdl4j/1.6.2-fixed/wsdl4j-1.6.2-fixed.pom (386 B at 0.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-ssl/not-yet-commons-ssl/0.3.11/not-yet-commons-ssl-0.3.11.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/commons-ssl/not-yet-commons-ssl/0.3.11/not-yet-commons-ssl-0.3.11.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/commons-ssl/not-yet-commons-ssl/0.3.11/not-yet-commons-ssl-0.3.11.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-ssl/not-yet-commons-ssl/0.3.11/not-yet-commons-ssl-0.3.11.pom (171 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-logging/commons-logging/1.0/commons-logging-1.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-logging/commons-logging/1.0/commons-logging-1.0.pom (163 B at 0.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-lang/commons-lang/1.0/commons-lang-1.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-lang/commons-lang/1.0/commons-lang-1.0.pom (3 KB at 2.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/junit/junit/3.7/junit-3.7.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/junit/junit/3.7/junit-3.7.pom (143 B at 0.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom (357 B at 0.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.pom (866 B at 1.0 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/json/json-lib/2.2.2-jdk15/json-lib-2.2.2-jdk15.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/json/json-lib/2.2.2-jdk15/json-lib-2.2.2-jdk15.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/json/json-lib/2.2.2-jdk15/json-lib-2.2.2-jdk15.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/json/json-lib/2.2.2-jdk15/json-lib-2.2.2-jdk15.pom (183 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/ezmorph/ezmorph/1.0.5/ezmorph-1.0.5.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/ezmorph/ezmorph/1.0.5/ezmorph-1.0.5.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/ezmorph/ezmorph/1.0.5/ezmorph-1.0.5.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/ezmorph/ezmorph/1.0.5/ezmorph-1.0.5.pom (153 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xom/xom/1.1/xom-1.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xom/xom/1.1/xom-1.1.pom (2 KB at 1.7 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.pom (153 B at 2.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xalan/xalan/2.7.0/xalan-2.7.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/xalan/xalan/2.7.0/xalan-2.7.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/xalan/xalan/2.7.0/xalan-2.7.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xalan/xalan/2.7.0/xalan-2.7.0.pom (144 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jaxen/jaxen/1.1-beta-8/jaxen-1.1-beta-8.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jaxen/jaxen/1.1-beta-8/jaxen-1.1-beta-8.pom (7 KB at 6.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom (7 KB at 6.9 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.pom (365 B at 0.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jdom/jdom/1.0/jdom-1.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jdom/jdom/1.0/jdom-1.0.pom (2 KB at 1.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xom/xom/1.0b3/xom-1.0b3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/xom/xom/1.0b3/xom-1.0b3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/xom/xom/1.0b3/xom-1.0b3.pom (2 KB at 14.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/swingx/swingx/soapui/swingx-soapui.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/swingx/swingx/soapui/swingx-soapui.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/swingx/swingx/soapui/swingx-soapui.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/swingx/swingx/soapui/swingx-soapui.pom (152 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-codec/commons-codec/1.3/commons-codec-1.3.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-codec/commons-codec/1.3/commons-codec-1.3.pom (6 KB at 5.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/codehaus/groovy/groovy-all/2.1.7/groovy-all-2.1.7.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-all/2.1.7/groovy-all-2.1.7.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-all/2.1.7/groovy-all-2.1.7.pom (18 KB at 241.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/rhino/js/1.7R2/js-1.7R2.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/rhino/js/1.7R2/js-1.7R2.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/rhino/js/1.7R2/js-1.7R2.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/rhino/js/1.7R2/js-1.7R2.pom (180 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/saxon/saxon/9.1.0.8j/saxon-9.1.0.8j.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/saxon/saxon/9.1.0.8j/saxon-9.1.0.8j.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/saxon/saxon/9.1.0.8j/saxon-9.1.0.8j.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/saxon/saxon/9.1.0.8j/saxon-9.1.0.8j.pom (153 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/saxon/saxon-dom/9.1.0.8j/saxon-dom-9.1.0.8j.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/saxon/saxon-dom/9.1.0.8j/saxon-dom-9.1.0.8j.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/saxon/saxon-dom/9.1.0.8j/saxon-dom-9.1.0.8j.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/saxon/saxon-dom/9.1.0.8j/saxon-dom-9.1.0.8j.pom (157 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xmlunit/xmlunit/1.2/xmlunit-1.2.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.2/xmlunit-1.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.2/xmlunit-1.2.pom (3 KB at 36.7 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/bouncycastle/bcprov-jdk15/144/bcprov-jdk15-144.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/bouncycastle/bcprov-jdk15/144/bcprov-jdk15-144.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/bouncycastle/bcprov-jdk15/144/bcprov-jdk15-144.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/bouncycastle/bcprov-jdk15/144/bcprov-jdk15-144.pom (161 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jtidy/jtidy/r872-jdk15/jtidy-r872-jdk15.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/jtidy/jtidy/r872-jdk15/jtidy-r872-jdk15.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/jtidy/jtidy/r872-jdk15/jtidy-r872-jdk15.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jtidy/jtidy/r872-jdk15/jtidy-r872-jdk15.pom (148 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/javax/jms/jms/1.1/jms-1.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/javax/jms/jms/1.1/jms-1.1.pom (677 B at 0.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/hermesjms/hermes/1.14/hermes-1.14.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/hermesjms/hermes/1.14/hermes-1.14.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/hermesjms/hermes/1.14/hermes-1.14.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/hermesjms/hermes/1.14/hermes-1.14.pom (187 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/amf/flex-messaging-common/1.0/flex-messaging-common-1.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/amf/flex-messaging-common/1.0/flex-messaging-common-1.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/amf/flex-messaging-common/1.0/flex-messaging-common-1.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/amf/flex-messaging-common/1.0/flex-messaging-common-1.0.pom (195 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/amf/flex-messaging-core/1.0/flex-messaging-core-1.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/amf/flex-messaging-core/1.0/flex-messaging-core-1.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/amf/flex-messaging-core/1.0/flex-messaging-core-1.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/amf/flex-messaging-core/1.0/flex-messaging-core-1.0.pom (193 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/amf/flex-messaging-opt/1.0/flex-messaging-opt-1.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/amf/flex-messaging-opt/1.0/flex-messaging-opt-1.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/amf/flex-messaging-opt/1.0/flex-messaging-opt-1.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/amf/flex-messaging-opt/1.0/flex-messaging-opt-1.0.pom (192 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/amf/flex-messaging-proxy/1.0/flex-messaging-proxy-1.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/amf/flex-messaging-proxy/1.0/flex-messaging-proxy-1.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/amf/flex-messaging-proxy/1.0/flex-messaging-proxy-1.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/amf/flex-messaging-proxy/1.0/flex-messaging-proxy-1.0.pom (194 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/amf/flex-messaging-remoting/1.0/flex-messaging-remoting-1.0.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/amf/flex-messaging-remoting/1.0/flex-messaging-remoting-1.0.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/amf/flex-messaging-remoting/1.0/flex-messaging-remoting-1.0.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/amf/flex-messaging-remoting/1.0/flex-messaging-remoting-1.0.pom (197 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/thoughtworks/xstream/1.3.1/xstream-1.3.1.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/thoughtworks/xstream/1.3.1/xstream-1.3.1.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/thoughtworks/xstream/1.3.1/xstream-1.3.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/thoughtworks/xstream/1.3.1/xstream-1.3.1.pom (192 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/samba/jcifs/jcifs/1.2.9/jcifs-1.2.9.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/samba/jcifs/jcifs/1.2.9/jcifs-1.2.9.pom (503 B at 0.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-directorychooser/7.3/l2fprod-common-directorychooser-7.3.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-directorychooser/7.3/l2fprod-common-directorychooser-7.3.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-directorychooser/7.3/l2fprod-common-directorychooser-7.3.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-directorychooser/7.3/l2fprod-common-directorychooser-7.3.pom (176 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-fontchooser/7.3/l2fprod-common-fontchooser-7.3.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-fontchooser/7.3/l2fprod-common-fontchooser-7.3.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-fontchooser/7.3/l2fprod-common-fontchooser-7.3.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-fontchooser/7.3/l2fprod-common-fontchooser-7.3.pom (171 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/santuario/xmlsec/1.4.5/xmlsec-1.4.5.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/santuario/xmlsec/1.4.5/xmlsec-1.4.5.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/santuario/xmlsec/1.4.5/xmlsec-1.4.5.pom (12 KB at 153.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-logging/commons-logging/1.1/commons-logging-1.1.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1/commons-logging-1.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1/commons-logging-1.1.pom (7 KB at 81.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/logkit/logkit/1.0.1/logkit-1.0.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/logkit/logkit/1.0.1/logkit-1.0.1.pom (147 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.pom (167 B at 0.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/javax/servlet/servlet-api/2.3/servlet-api-2.3.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.3/servlet-api-2.3.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.3/servlet-api-2.3.pom (156 B at 2.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/xerces/xml-apis/2.9.1/xml-apis-2.9.1.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/apache/xerces/xml-apis/2.9.1/xml-apis-2.9.1.pom (197 B at 0.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/gnu/cajo/cajo/1.142/cajo-1.142.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/gnu/cajo/cajo/1.142/cajo-1.142.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/gnu/cajo/cajo/1.142/cajo-1.142.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/gnu/cajo/cajo/1.142/cajo-1.142.pom (181 B at 0.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/ws/commons/util/ws-commons-util/1.0.2/ws-commons-util-1.0.2.pom
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ws/commons/util/ws-commons-util/1.0.2/ws-commons-util-1.0.2.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ws/commons/util/ws-commons-util/1.0.2/ws-commons-util-1.0.2.pom (8 KB at 103.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/btr/proxy-vole/20131209/proxy-vole-20131209.pom
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/com/btr/proxy-vole/20131209/proxy-vole-20131209.pom: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/com/btr/proxy-vole/20131209/proxy-vole-20131209.pom
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/com/btr/proxy-vole/20131209/proxy-vole-20131209.pom (350 B at 0.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/junit/junit/4.10/junit-4.10.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xmlbeans/xbean/fixed-2.4.0/xbean-fixed-2.4.0.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xmlbeans/xbean_xpath/2.4.0/xbean_xpath-2.4.0.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xmlbeans/xmlpublic/2.4.0/xmlpublic-2.4.0.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/javax/xml/bind/jsr173_api/1.0/jsr173_api-1.0.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/google/guava/guava/14.0/guava-14.0.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/xmlbeans/xbean_xpath/2.4.0/xbean_xpath-2.4.0.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/xmlbeans/xbean_xpath/2.4.0/xbean_xpath-2.4.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xmlbeans/xbean_xpath/2.4.0/xbean_xpath-2.4.0.jar (7 KB at 3.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/log4j/log4j/1.2.14/log4j-1.2.14.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/fifesoft/rsyntaxtextarea/2.5.0/rsyntaxtextarea-2.5.0.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jetty/jetty/6.1.26/jetty-6.1.26.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/xmlbeans/xmlpublic/2.4.0/xmlpublic-2.4.0.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/xmlbeans/xmlpublic/2.4.0/xmlpublic-2.4.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xmlbeans/xmlpublic/2.4.0/xmlpublic-2.4.0.jar (423 KB at 103.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar (173 KB at 30.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/ws/security/wss4j/1.6.14/wss4j-1.6.14.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/opensaml/opensaml/2.5.1-1/opensaml-2.5.1-1.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar (131 KB at 20.7 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/opensaml/openws/1.4.2-1/openws-1.4.2-1.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/jetty/jetty/6.1.26/jetty-6.1.26.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/jetty/jetty/6.1.26/jetty-6.1.26.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jetty/jetty/6.1.26/jetty-6.1.26.jar (528 KB at 80.3 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/opensaml/xmltooling/1.3.2-1/xmltooling-1.3.2-1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/net/sourceforge/htmlunit/htmlunit/2.7/htmlunit-2.7.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/w3c/css/sac/1.3/sac-1.3.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.7/htmlunit-core-js-2.7.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/w3c/css/sac/1.3/sac-1.3.jar (16 KB at 1.9 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpmime/4.1.1/httpmime-4.1.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpclient-cache/4.1.1/httpclient-cache-4.1.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcore/4.1.1/httpcore-4.1.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/httpcomponents/httpcore-nio/4.1.1/httpcore-nio-4.1.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.client/0.31/org.apache.oltu.oauth2.client-0.31.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.common/0.31/org.apache.oltu.oauth2.common-0.31.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/codehaus/jettison/jettison/1.2/jettison-1.2.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.httpclient4/0.31/org.apache.oltu.oauth2.httpclient4-0.31.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/javax/activation/activation/1.1/activation-1.1.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar (10 KB at 0.9 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/javax/mail/mail/1.4/mail-1.4.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/javax/activation/activation/1.1/activation-1.1.jar (62 KB at 5.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/wsdl4j/wsdl4j/1.6.2-fixed/wsdl4j-1.6.2-fixed.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/xmlbeans/xbean/fixed-2.4.0/xbean-fixed-2.4.0.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/xmlbeans/xbean/fixed-2.4.0/xbean-fixed-2.4.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xmlbeans/xbean/fixed-2.4.0/xbean-fixed-2.4.0.jar (2633 KB at 209.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-ssl/not-yet-commons-ssl/0.3.11/not-yet-commons-ssl-0.3.11.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar (1201 KB at 89.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/wsdl4j/wsdl4j/1.6.2-fixed/wsdl4j-1.6.2-fixed.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/wsdl4j/wsdl4j/1.6.2-fixed/wsdl4j-1.6.2-fixed.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/wsdl4j/wsdl4j/1.6.2-fixed/wsdl4j-1.6.2-fixed.jar (143 KB at 10.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/json/json-lib/2.2.2-jdk15/json-lib-2.2.2-jdk15.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/javax/mail/mail/1.4/mail-1.4.jar (380 KB at 27.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/ezmorph/ezmorph/1.0.5/ezmorph-1.0.5.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/commons-ssl/not-yet-commons-ssl/0.3.11/not-yet-commons-ssl-0.3.11.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/commons-ssl/not-yet-commons-ssl/0.3.11/not-yet-commons-ssl-0.3.11.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-ssl/not-yet-commons-ssl/0.3.11/not-yet-commons-ssl-0.3.11.jar (265 KB at 17.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xom/xom/1.1/xom-1.1.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar (185 KB at 12.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/json/json-lib/2.2.2-jdk15/json-lib-2.2.2-jdk15.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/json/json-lib/2.2.2-jdk15/json-lib-2.2.2-jdk15.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/json/json-lib/2.2.2-jdk15/json-lib-2.2.2-jdk15.jar (141 KB at 9.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jaxen/jaxen/1.1-beta-8/jaxen-1.1-beta-8.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/ezmorph/ezmorph/1.0.5/ezmorph-1.0.5.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/ezmorph/ezmorph/1.0.5/ezmorph-1.0.5.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/ezmorph/ezmorph/1.0.5/ezmorph-1.0.5.jar (85 KB at 5.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jdom/jdom/1.0/jdom-1.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jdom/jdom/1.0/jdom-1.0.jar (150 KB at 8.7 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/swingx/swingx/soapui/swingx-soapui.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jaxen/jaxen/1.1-beta-8/jaxen-1.1-beta-8.jar (227 KB at 13.1 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-codec/commons-codec/1.3/commons-codec-1.3.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xom/xom/1.1/xom-1.1.jar (422 KB at 24.0 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/codehaus/groovy/groovy-all/2.1.7/groovy-all-2.1.7.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar (307 KB at 17.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/rhino/js/1.7R2/js-1.7R2.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/saxon/saxon/9.1.0.8j/saxon-9.1.0.8j.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-codec/commons-codec/1.3/commons-codec-1.3.jar (46 KB at 2.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/saxon/saxon-dom/9.1.0.8j/saxon-dom-9.1.0.8j.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/saxon/saxon-dom/9.1.0.8j/saxon-dom-9.1.0.8j.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/saxon/saxon-dom/9.1.0.8j/saxon-dom-9.1.0.8j.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/saxon/saxon-dom/9.1.0.8j/saxon-dom-9.1.0.8j.jar (127 KB at 6.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xmlunit/xmlunit/1.2/xmlunit-1.2.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xalan/xalan/2.7.1/xalan-2.7.1.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/rhino/js/1.7R2/js-1.7R2.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/rhino/js/1.7R2/js-1.7R2.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/rhino/js/1.7R2/js-1.7R2.jar (851 KB at 36.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/bouncycastle/bcprov-jdk15/144/bcprov-jdk15-144.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/swingx/swingx/soapui/swingx-soapui.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/swingx/swingx/soapui/swingx-soapui.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/swingx/swingx/soapui/swingx-soapui.jar (1130 KB at 48.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/jtidy/jtidy/r872-jdk15/jtidy-r872-jdk15.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/jtidy/jtidy/r872-jdk15/jtidy-r872-jdk15.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/jtidy/jtidy/r872-jdk15/jtidy-r872-jdk15.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/jtidy/jtidy/r872-jdk15/jtidy-r872-jdk15.jar (273 KB at 10.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/javax/jms/jms/1.1/jms-1.1.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/javax/jms/jms/1.1/jms-1.1.jar (26 KB at 1.0 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/hermesjms/hermes/1.14/hermes-1.14.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/bouncycastle/bcprov-jdk15/144/bcprov-jdk15-144.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/bouncycastle/bcprov-jdk15/144/bcprov-jdk15-144.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/bouncycastle/bcprov-jdk15/144/bcprov-jdk15-144.jar (1606 KB at 50.9 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/amf/flex-messaging-common/1.0/flex-messaging-common-1.0.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/amf/flex-messaging-common/1.0/flex-messaging-common-1.0.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/amf/flex-messaging-common/1.0/flex-messaging-common-1.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/amf/flex-messaging-common/1.0/flex-messaging-common-1.0.jar (88 KB at 2.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/amf/flex-messaging-core/1.0/flex-messaging-core-1.0.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/hermesjms/hermes/1.14/hermes-1.14.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/hermesjms/hermes/1.14/hermes-1.14.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/hermesjms/hermes/1.14/hermes-1.14.jar (1319 KB at 39.2 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/amf/flex-messaging-opt/1.0/flex-messaging-opt-1.0.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/amf/flex-messaging-opt/1.0/flex-messaging-opt-1.0.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/amf/flex-messaging-opt/1.0/flex-messaging-opt-1.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/amf/flex-messaging-opt/1.0/flex-messaging-opt-1.0.jar (21 KB at 0.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/amf/flex-messaging-proxy/1.0/flex-messaging-proxy-1.0.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/xalan/xalan/2.7.1/xalan-2.7.1.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/xalan/xalan/2.7.1/xalan-2.7.1.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/xalan/xalan/2.7.1/xalan-2.7.1.jar (3102 KB at 87.9 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/amf/flex-messaging-remoting/1.0/flex-messaging-remoting-1.0.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/amf/flex-messaging-proxy/1.0/flex-messaging-proxy-1.0.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/amf/flex-messaging-proxy/1.0/flex-messaging-proxy-1.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/amf/flex-messaging-proxy/1.0/flex-messaging-proxy-1.0.jar (65 KB at 1.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/thoughtworks/xstream/1.3.1/xstream-1.3.1.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/amf/flex-messaging-remoting/1.0/flex-messaging-remoting-1.0.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/amf/flex-messaging-remoting/1.0/flex-messaging-remoting-1.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/amf/flex-messaging-remoting/1.0/flex-messaging-remoting-1.0.jar (19 KB at 0.5 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/net/sourceforge/cssparser/cssparser/0.9.5/cssparser-0.9.5.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/net/sourceforge/nekohtml/nekohtml/1.9.14/nekohtml-1.9.14.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/amf/flex-messaging-core/1.0/flex-messaging-core-1.0.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/amf/flex-messaging-core/1.0/flex-messaging-core-1.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/amf/flex-messaging-core/1.0/flex-messaging-core-1.0.jar (630 KB at 16.8 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/samba/jcifs/jcifs/1.2.9/jcifs-1.2.9.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-directorychooser/7.3/l2fprod-common-directorychooser-7.3.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-directorychooser/7.3/l2fprod-common-directorychooser-7.3.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-directorychooser/7.3/l2fprod-common-directorychooser-7.3.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-directorychooser/7.3/l2fprod-common-directorychooser-7.3.jar (76 KB at 1.9 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-fontchooser/7.3/l2fprod-common-fontchooser-7.3.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/samba/jcifs/jcifs/1.2.9/jcifs-1.2.9.jar (262 KB at 6.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/santuario/xmlsec/1.4.5/xmlsec-1.4.5.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/thoughtworks/xstream/1.3.1/xstream-1.3.1.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/thoughtworks/xstream/1.3.1/xstream-1.3.1.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/thoughtworks/xstream/1.3.1/xstream-1.3.1.jar (422 KB at 10.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/xerces/xml-apis/2.9.1/xml-apis-2.9.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xalan/serializer/2.7.1/serializer-2.7.1.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/saxon/saxon/9.1.0.8j/saxon-9.1.0.8j.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/saxon/saxon/9.1.0.8j/saxon-9.1.0.8j.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/saxon/saxon/9.1.0.8j/saxon-9.1.0.8j.jar (4929 KB at 121.4 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/gnu/cajo/cajo/1.142/cajo-1.142.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/joda-time/joda-time/1.6.2/joda-time-1.6.2.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-fontchooser/7.3/l2fprod-common-fontchooser-7.3.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-fontchooser/7.3/l2fprod-common-fontchooser-7.3.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/l2fprod/l2fprod-common-fontchooser/7.3/l2fprod-common-fontchooser-7.3.jar (122 KB at 2.9 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/apache/ws/commons/util/ws-commons-util/1.0.2/ws-commons-util-1.0.2.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/org/apache/xerces/xml-apis/2.9.1/xml-apis-2.9.1.jar (190 KB at 4.6 KB/sec)
+[INFO] Downloading: http://www.soapui.org/repository/maven2/com/btr/proxy-vole/20131209/proxy-vole-20131209.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar
+[INFO] Downloading: http://www.soapui.org/repository/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/gnu/cajo/cajo/1.142/cajo-1.142.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/gnu/cajo/cajo/1.142/cajo-1.142.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/gnu/cajo/cajo/1.142/cajo-1.142.jar (61 KB at 1.4 KB/sec)
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/com/btr/proxy-vole/20131209/proxy-vole-20131209.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/com/btr/proxy-vole/20131209/proxy-vole-20131209.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/com/btr/proxy-vole/20131209/proxy-vole-20131209.jar (191 KB at 4.4 KB/sec)
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar (298 KB at 6.8 KB/sec)
+[WARNING] Could not validate integrity of download from http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar: Checksum validation failed, no checksums available
+[WARNING] Checksum validation failed, no checksums available for http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar
+[INFO] Downloaded: http://www.soapui.org/repository/maven2/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar (11250 KB at 229.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/javax/xml/bind/jsr173_api/1.0/jsr173_api-1.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0/guava-14.0.jar
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/junit/junit/4.10/junit-4.10.jar (248 KB at 1831.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.4/commons-lang-2.4.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.4/commons-lang-2.4.jar (256 KB at 1131.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.jar (359 KB at 1097.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar (60 KB at 144.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/com/fifesoft/rsyntaxtextarea/2.5.0/rsyntaxtextarea-2.5.0.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/fifesoft/rsyntaxtextarea/2.5.0/rsyntaxtextarea-2.5.0.jar (947 KB at 1755.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ws/security/wss4j/1.6.14/wss4j-1.6.14.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ws/security/wss4j/1.6.14/wss4j-1.6.14.jar (433 KB at 684.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/opensaml/opensaml/2.5.1-1/opensaml-2.5.1-1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/javax/xml/bind/jsr173_api/1.0/jsr173_api-1.0.jar (49 KB at 65.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/opensaml/openws/1.4.2-1/openws-1.4.2-1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar (75 KB at 100.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/opensaml/xmltooling/1.3.2-1/xmltooling-1.3.2-1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/opensaml/opensaml/2.5.1-1/opensaml-2.5.1-1.jar (1322 KB at 1685.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/htmlunit/htmlunit/2.7/htmlunit-2.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/htmlunit/htmlunit/2.7/htmlunit-2.7.jar (879 KB at 974.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.7/htmlunit-core-js-2.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/opensaml/xmltooling/1.3.2-1/xmltooling-1.3.2-1.jar (597 KB at 625.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/opensaml/openws/1.4.2-1/openws-1.4.2-1.jar (553 KB at 572.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.1.1/httpmime-4.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar (562 KB at 560.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient-cache/4.1.1/httpclient-cache-4.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.7/htmlunit-core-js-2.7.jar (890 KB at 873.7 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.1.1/httpcore-4.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpmime/4.1.1/httpmime-4.1.1.jar (27 KB at 25.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore-nio/4.1.1/httpcore-nio-4.1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0/guava-14.0.jar (2138 KB at 2032.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.client/0.31/org.apache.oltu.oauth2.client-0.31.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar (343 KB at 324.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.common/0.31/org.apache.oltu.oauth2.common-0.31.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.1.1/httpcore-4.1.1.jar (177 KB at 161.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.2/jettison-1.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient-cache/4.1.1/httpclient-cache-4.1.1.jar (104 KB at 93.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.client/0.31/org.apache.oltu.oauth2.client-0.31.jar (31 KB at 27.0 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.httpclient4/0.31/org.apache.oltu.oauth2.httpclient4-0.31.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.common/0.31/org.apache.oltu.oauth2.common-0.31.jar (51 KB at 44.6 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore-nio/4.1.1/httpcore-nio-4.1.1.jar (192 KB at 169.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-all/2.1.7/groovy-all-2.1.7.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.2/jettison-1.2.jar (71 KB at 60.5 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.2/xmlunit-1.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar (25 KB at 21.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/cssparser/cssparser/0.9.5/cssparser-0.9.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/oltu/oauth2/org.apache.oltu.oauth2.httpclient4/0.31/org.apache.oltu.oauth2.httpclient4-0.31.jar (11 KB at 8.8 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.14/nekohtml-1.9.14.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.2/xmlParserAPIs-2.6.2.jar (122 KB at 99.4 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/santuario/xmlsec/1.4.5/xmlsec-1.4.5.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.2/xmlunit-1.2.jar (95 KB at 75.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/xalan/serializer/2.7.1/serializer-2.7.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.14/nekohtml-1.9.14.jar (122 KB at 94.1 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/santuario/xmlsec/1.4.5/xmlsec-1.4.5.jar (441 KB at 326.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/joda-time/joda-time/1.6.2/joda-time-1.6.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/xalan/serializer/2.7.1/serializer-2.7.1.jar (272 KB at 201.2 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/ws/commons/util/ws-commons-util/1.0.2/ws-commons-util-1.0.2.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/net/sourceforge/cssparser/cssparser/0.9.5/cssparser-0.9.5.jar (248 KB at 183.3 KB/sec)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar (190 KB at 136.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/ws/commons/util/ws-commons-util/1.0.2/ws-commons-util-1.0.2.jar (34 KB at 23.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar (165 KB at 113.3 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/joda-time/joda-time/1.6.2/joda-time-1.6.2.jar (531 KB at 361.0 KB/sec)
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-all/2.1.7/groovy-all-2.1.7.jar (6226 KB at 4101.2 KB/sec)
 SoapUI 5.0.0 Maven2 TestCase Runner
-10:51:24,966 WARN  [SoapUI] Missing folder [C:\Users\Heba\.jenkins\workspace\Soap ? PeriodicTable\ext] for external libraries
-10:51:25,128 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Heba\soapui-settings.xml]
-10:51:28,080 INFO  [WsdlProject] Loaded project from [file:/C:/Users/Heba/.jenkins/workspace/Soap%20?%20PeriodicTable/periodictable-soap-project.xml]
-10:51:28,507 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [periodictable]
-10:51:28,508 INFO  [SoapUITestCaseRunner] Running Project [periodictable], runType = SEQUENTIAL
-10:51:28,520 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [PeriodicTable_TestCase]
-10:51:28,527 INFO  [SoapUITestCaseRunner] running step [GetAtoms]
-10:51:28,643 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
-10:51:28,643 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
-10:51:29,000 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
-10:51:29,008 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
-10:51:29,343 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-10:51:29,343 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
-10:51:29,343 INFO  [SoapUITestCaseRunner] Assertion [Contains"Actinium"] has status VALID
-10:51:29,343 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"Sweden"] has status VALID
-10:51:29,343 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
-10:51:29,343 INFO  [SoapUITestCaseRunner] running step [GetAtomicNumber]
-10:51:29,346 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
-10:51:29,347 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
-10:51:29,347 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
-10:51:29,881 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
-10:51:29,882 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
-10:51:29,944 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-10:51:29,944 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
-10:51:29,944 INFO  [SoapUITestCaseRunner] Assertion [Contains"Ac"] has status VALID
-10:51:29,945 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"AF"] has status VALID
-10:51:29,945 INFO  [SoapUITestCaseRunner] running step [ElementName]
-10:51:29,952 INFO  [SoapUITestCaseRunner] running step [Weight]
-10:51:30,281 INFO  [log] Aluminium
-10:51:30,288 INFO  [SoapUITestCaseRunner] running step [GetAtomicWeight]
-10:51:30,290 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
-10:51:30,291 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
-10:51:30,291 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
-10:51:30,836 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
-10:51:30,836 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
-10:51:30,844 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-10:51:30,844 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
-10:51:30,844 INFO  [SoapUITestCaseRunner] Assertion [Contains"26.9815"] has status VALID
-10:51:30,844 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"29.00"] has status VALID
-10:51:30,845 INFO  [SoapUITestCaseRunner] running step [FetchResponse_ Atoms]
-10:51:30,985 INFO  [log] Antimony
-10:51:30,986 INFO  [SoapUITestCaseRunner] running step [GetElementSymbol]
-10:51:30,987 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
-10:51:30,988 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
-10:51:30,988 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
-10:51:31,531 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
-10:51:31,531 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
-10:51:31,539 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
-10:51:31,539 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
-10:51:31,540 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
-10:51:31,540 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
-10:51:31,540 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [PeriodicTable_TestCase], time taken: 2997ms, status: FINISHED
-10:51:31,541 INFO  [SoapUITestCaseRunner] Project [periodictable] finished with status [FINISHED] in 3028ms
+14:49:55,282 WARN  [SoapUI] Missing folder [/Users/heba/.jenkins/jobs/Soap – PeriodicTable/workspace/ext] for external libraries
+14:49:55,431 INFO  [DefaultSoapUICore] initialized soapui-settings from [/Users/heba/soapui-settings.xml]
+14:49:55,859 INFO  [WsdlProject] Loaded project from [file:/Users/heba/.jenkins/jobs/Soap%20–%20PeriodicTable/workspace/periodictable-soap-project.xml]
+14:49:56,179 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [periodictable]
+14:49:56,181 INFO  [SoapUITestCaseRunner] Running Project [periodictable], runType = SEQUENTIAL
+14:49:56,193 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [PeriodicTable_TestCase]
+14:49:56,199 INFO  [SoapUITestCaseRunner] running step [GetAtoms]
+14:49:56,745 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+14:49:56,745 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+14:49:57,109 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+14:49:57,112 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+14:49:57,352 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+14:49:57,352 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+14:49:57,352 INFO  [SoapUITestCaseRunner] Assertion [Contains"Actinium"] has status VALID
+14:49:57,352 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"Sweden"] has status VALID
+14:49:57,352 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+14:49:57,352 INFO  [SoapUITestCaseRunner] running step [GetAtomicNumber]
+14:49:57,354 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+14:49:57,356 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+14:49:57,356 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+14:49:57,926 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+14:49:57,926 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+14:49:57,933 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+14:49:57,933 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+14:49:57,933 INFO  [SoapUITestCaseRunner] Assertion [Contains"Ac"] has status VALID
+14:49:57,933 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"AF"] has status VALID
+14:49:57,933 INFO  [SoapUITestCaseRunner] running step [ElementName]
+14:49:57,936 INFO  [SoapUITestCaseRunner] running step [Weight]
+14:49:58,180 INFO  [log] Aluminium
+14:49:58,187 INFO  [SoapUITestCaseRunner] running step [GetAtomicWeight]
+14:49:58,188 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+14:49:58,189 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+14:49:58,189 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+14:49:58,746 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+14:49:58,746 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+14:49:58,749 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+14:49:58,750 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+14:49:58,750 INFO  [SoapUITestCaseRunner] Assertion [Contains"26.9815"] has status VALID
+14:49:58,750 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"29.00"] has status VALID
+14:49:58,750 INFO  [SoapUITestCaseRunner] running step [FetchResponse_ Atoms]
+14:49:58,843 INFO  [log] Antimony
+14:49:58,844 INFO  [SoapUITestCaseRunner] running step [GetElementSymbol]
+14:49:58,845 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+14:49:58,846 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+14:49:58,846 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+14:49:59,462 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+14:49:59,462 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+14:49:59,466 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+14:49:59,466 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+14:49:59,467 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+14:49:59,467 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
+14:49:59,467 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [PeriodicTable_TestCase], time taken: 3257ms, status: FINISHED
+14:49:59,467 INFO  [SoapUITestCaseRunner] Project [periodictable] finished with status [FINISHED] in 3282ms
 [JENKINS] Recording test results
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.970 s
-[INFO] Finished at: 2016-05-23T10:51:31+02:00
-[INFO] Final Memory: 26M/251M
+[INFO] Total time: 03:00 min
+[INFO] Finished at: 2016-05-23T14:49:59+02:00
+[INFO] Final Memory: 30M/307M
 [INFO] ------------------------------------------------------------------------
-[JENKINS] Archiving C:\Users\Heba\.jenkins\workspace\Soap ? PeriodicTable\pom.xml to com.scania.cbm.test/soapui-project/0.0.1/soapui-project-0.0.1.pom
+[JENKINS] Archiving /Users/heba/.jenkins/jobs/Soap – PeriodicTable/workspace/pom.xml to com.scania.cbm.test/soapui-project/0.0.1/soapui-project-0.0.1.pom
 channel stopped
 Finished: SUCCESS
