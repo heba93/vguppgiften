@@ -1,0 +1,94 @@
+Started by user anonymous
+Building in workspace C:\Users\Heba\.jenkins\workspace\Soap ? PeriodicTable
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/Heba/soupui.git # timeout=10
+Fetching upstream changes from https://github.com/Heba/soupui.git
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+using .gitcredentials to set credentials
+ > C:\Program Files\Git\bin\git.exe config --local credential.username Heba@gmail.com # timeout=10
+ > C:\Program Files\Git\bin\git.exe config --local credential.helper store --file=\"C:\Users\Heba\AppData\Local\Temp\git2758433795342358675.credentials\" # timeout=10
+ > C:\Program Files\Git\bin\git.exe -c core.askpass=true fetch --tags --progress https://github.com/Heba/soupui.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe config --local --remove-section credential # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision e1ee93bbfe605900a5a5aa112d15c51503ebb9bf (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f e1ee93bbfe605900a5a5aa112d15c51503ebb9bf
+ > C:\Program Files\Git\bin\git.exe rev-list e01b5d2145d4ea0905f2a9c650df39a714c780b8 # timeout=10
+Parsing POMs
+[Soap ? PeriodicTable] $ "C:\Program Files\Java\jdk1.8.0_65/bin/java" -cp C:\Users\Heba\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-agent-1.5.jar;C:\Users\Heba\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v\boot\plexus-classworlds-2.5.2.jar;C:\Users\Heba\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v/conf/logging jenkins.maven3.agent.Maven31Main C:\Users\Heba\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven.v C:\Users\Heba\.jenkins\war\WEB-INF\lib\remoting-2.57.jar C:\Users\Heba\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven31-interceptor-1.5.jar C:\Users\Heba\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.5.jar 59573
+<===[JENKINS REMOTING CAPACITY]===>???channel started
+Executing Maven:  -B -f C:\Users\Heba\.jenkins\workspace\Soap ? PeriodicTable\pom.xml com.smartbear.soapui:soapui-maven-plugin:test -DprojectFile=periodictable-soap-project.xml
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building soapUI project 0.0.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- soapui-maven-plugin:5.0.0:test (default-cli) @ soapui-project ---
+SoapUI 5.0.0 Maven2 TestCase Runner
+10:51:24,966 WARN  [SoapUI] Missing folder [C:\Users\Heba\.jenkins\workspace\Soap ? PeriodicTable\ext] for external libraries
+10:51:25,128 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Heba\soapui-settings.xml]
+10:51:28,080 INFO  [WsdlProject] Loaded project from [file:/C:/Users/Heba/.jenkins/workspace/Soap%20?%20PeriodicTable/periodictable-soap-project.xml]
+10:51:28,507 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [periodictable]
+10:51:28,508 INFO  [SoapUITestCaseRunner] Running Project [periodictable], runType = SEQUENTIAL
+10:51:28,520 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [PeriodicTable_TestCase]
+10:51:28,527 INFO  [SoapUITestCaseRunner] running step [GetAtoms]
+10:51:28,643 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+10:51:28,643 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+10:51:29,000 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+10:51:29,008 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+10:51:29,343 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+10:51:29,343 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+10:51:29,343 INFO  [SoapUITestCaseRunner] Assertion [Contains"Actinium"] has status VALID
+10:51:29,343 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"Sweden"] has status VALID
+10:51:29,343 INFO  [SoapUITestCaseRunner] Assertion [XPath Match] has status VALID
+10:51:29,343 INFO  [SoapUITestCaseRunner] running step [GetAtomicNumber]
+10:51:29,346 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+10:51:29,347 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+10:51:29,347 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+10:51:29,881 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+10:51:29,882 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+10:51:29,944 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+10:51:29,944 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+10:51:29,944 INFO  [SoapUITestCaseRunner] Assertion [Contains"Ac"] has status VALID
+10:51:29,945 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"AF"] has status VALID
+10:51:29,945 INFO  [SoapUITestCaseRunner] running step [ElementName]
+10:51:29,952 INFO  [SoapUITestCaseRunner] running step [Weight]
+10:51:30,281 INFO  [log] Aluminium
+10:51:30,288 INFO  [SoapUITestCaseRunner] running step [GetAtomicWeight]
+10:51:30,290 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+10:51:30,291 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+10:51:30,291 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+10:51:30,836 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+10:51:30,836 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+10:51:30,844 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+10:51:30,844 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+10:51:30,844 INFO  [SoapUITestCaseRunner] Assertion [Contains"26.9815"] has status VALID
+10:51:30,844 INFO  [SoapUITestCaseRunner] Assertion [Not Contains"29.00"] has status VALID
+10:51:30,845 INFO  [SoapUITestCaseRunner] running step [FetchResponse_ Atoms]
+10:51:30,985 INFO  [log] Antimony
+10:51:30,986 INFO  [SoapUITestCaseRunner] running step [GetElementSymbol]
+10:51:30,987 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+10:51:30,988 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+10:51:30,988 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /periodictable.asmx HTTP/1.1
+10:51:31,531 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+10:51:31,531 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+10:51:31,539 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+10:51:31,539 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+10:51:31,540 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+10:51:31,540 INFO  [SoapUITestCaseRunner] Assertion [Not Contains] has status VALID
+10:51:31,540 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [PeriodicTable_TestCase], time taken: 2997ms, status: FINISHED
+10:51:31,541 INFO  [SoapUITestCaseRunner] Project [periodictable] finished with status [FINISHED] in 3028ms
+[JENKINS] Recording test results
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.970 s
+[INFO] Finished at: 2016-05-23T10:51:31+02:00
+[INFO] Final Memory: 26M/251M
+[INFO] ------------------------------------------------------------------------
+[JENKINS] Archiving C:\Users\Heba\.jenkins\workspace\Soap ? PeriodicTable\pom.xml to com.scania.cbm.test/soapui-project/0.0.1/soapui-project-0.0.1.pom
+channel stopped
+Finished: SUCCESS
